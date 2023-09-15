@@ -17,30 +17,41 @@ You can install these dependencies using pip:
 
 ```bash
 pip install tensorflow tensorflow-hub fastapi pillow numpy
+```
 
-Running the Project
-Clone the project repository:
+## Running the Project
 
-git clone <repository-url>
-cd image-category-prediction
+1. Clone the project repository:
 
-Run the FastAPI application:
+```bash
+git clone https://github.com/mariamubarthh/image-classification.git
+cd image-classification
+```
+
+2. Run the FastAPI application:
+
+```bash
 python main.py
-
+```
 
 ## Usage
+
 Open your web browser and go to http://localhost:8000.
 
 You will see a page with an option to upload an image. Choose an image and click the "Predict" button.
 
+![Project Home Page](https://github.com/mariamubarthh/image-classification/blob/main/assets/home_page.png)
+
 The application will process the image and display the predicted category along with a confidence score.
 
-## Additional Details
-The project uses the MobileNetV2 model from TensorFlow Hub for image classification.
-Pretrained category names are defined in category_list.py.
-Uploaded images are preprocessed to meet the model's input requirements.
-The application is built using FastAPI for the backend and includes HTML templates for the frontend.
+![Project Output](https://github.com/mariamubarthh/image-classification/blob/main/assets/result.png)
 
+## Additional Details
+
+- The project uses the MobileNetV2 model from TensorFlow Hub for image classification.
+- Pretrained category names are defined in category_list.py.
+- Uploaded images are preprocessed to meet the model's input requirements.
+- The application is built using FastAPI for the backend and includes HTML templates for the frontend.
 
 ## Contributing
 
