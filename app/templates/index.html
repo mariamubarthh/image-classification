@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Category Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Category Prediction</h1>
+        <form method="post" enctype="multipart/form-data" action="/predict/">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if category is not none %}
+            <h2>Uploaded Image:</h2>
+            <img src="{{ image_data_uri }}" alt="Uploaded Image" style="max-width: 100%; height: auto;">
+            <h2>Predicted Category:</h2>
+            <p>{{ category }}</p>
+            <h2>Predicted Category Name</h2>
+            <p>{{ category_name }}</p>
+            <h2>Confidence Score:</h2>
+            <p>{{ confidence }}</p>
+        {% endif %}
+        <footer>
+            <p>Created and Designed by Mariamu Nerima Barth</p>
+        </footer>
+    </div>
+</body>
+</html>

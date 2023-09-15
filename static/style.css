@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures full viewport height */
+}
+
+.container {
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.result {
+    background-color: #e9f7ef;
+    border: 1px solid #5fc59e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.category {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.confidence {
+    font-size: 16px;
+    color: #777;
+}
+
+footer p {
+    font-style: italic;
+    font-weight: bold;
+    color: #fff; /* White text color */
+    font-size: 16px;
+    margin-top: 10px; /* Add some top margin for spacing */
+    text-align: center; /* Center-align the text within the footer */
+    background-color: #007BFF; /* Background color */
+    padding: 10px; /* Add padding for better visual appearance */
+    border-radius: 5px; /* Rounded corners for the background */
+    animation: fadeInOut 3s infinite; /* Animation */
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; } /* Start and end with opacity 0 (invisible) */
+    50% { opacity: 1; } /* Middle of animation with opacity 1 (visible) */
+}
