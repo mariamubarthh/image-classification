@@ -61,9 +61,6 @@ Contributions to Recipe Finder are welcome! If you find a bug or have a feature 
 
 Recipe Finder is licensed under the MIT License. See `LICENSE` for details.
 
-## Author
-
-Mariamu Nerima Barth (<a href="mailto:your-email@example.com">mariamubarthh@gmail.com</a>)
 
 ## Acknowledgments
 
